@@ -20,8 +20,9 @@ Set loginPage = Browser("name:=iPKO - nowa bankowość elektroniczna PKO Banku P
 		
 	If loginField.Exist(timeOut) Then
 		loginField.Set login
-		nextBtn.Click		
-					
+		wait 2
+		Browser("iPKO - nowa bankowość").Page("iPKO - nowa bankowość").WebButton("Dalej").Click
+		
 	 	Reporter.ReportEvent micPass, "wczytanie strony logowania", "wczytanie strony logowania"
 		''Dodanie komunikatu do loga
 		Call Log_Result("PASS", "wczytanie strony glownej")
@@ -39,8 +40,8 @@ Set loginPage = Browser("name:=iPKO - nowa bankowość elektroniczna PKO Banku P
 	If passwordField.Exist(timeOut) Then		
 		passwordField.Set password
 		wait 2
-		zalogujBtn.Click
-					
+		Browser("iPKO - nowa bankowość").Page("iPKO - nowa bankowość").WebButton("Zaloguj").Click
+			
 	 	Reporter.ReportEvent micPass, "wczytanie strony logowania", "wczytanie strony logowania"
 		''Dodanie komunikatu do loga
 		Call Log_Result("PASS", "wczytanie strony glownej")
