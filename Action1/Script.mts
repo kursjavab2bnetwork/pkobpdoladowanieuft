@@ -9,7 +9,7 @@ Select Case typOperacji
 		
 	'@TestFactoryMethod("wyszukanie", "wyszukanie")
 	Case "Przejdz_na_Doladowanie"
-		'@TestFactoryParam([request: STRING, Timeout: INT])
+		'@TestFactoryParam([Timeout: INT])
 		RunAction "Przejdz_na_Doladowanie", oneIteration
 		
 	'@TestFactoryMethod("WykonajPrzelew", "WykonajPrzelew")
