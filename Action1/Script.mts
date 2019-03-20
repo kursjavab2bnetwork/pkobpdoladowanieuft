@@ -12,10 +12,10 @@ Select Case typOperacji
 		'@TestFactoryParam([Timeout: INT])
 		RunAction "Przejdz_na_Doladowanie", oneIteration
 		
-	'@TestFactoryMethod("WykonajPrzelew", "WykonajPrzelew")
-	Case "WykonajPrzelew"
+	'@TestFactoryMethod("WykonajDoladowanie", "WykonajDoladowanie")
+	Case "WykonajDoladowanie"
 		'@TestFactoryParam([nazwaOdbiorcy: STRING, adres: STRING, Timeout: INT, kwota: INT, nazwisko: STRING, NumerTelefonu: STRING])
-		RunAction "WykonajPrzelew", oneIteration
+		RunAction "WykonajDoladowanie", oneIteration
 		
 	'@TestFactoryMethod("Sprawdz_Doladowanie", "Sprawdz_Doladowanie")
 	Case "Sprawdz_Doladowanie"
